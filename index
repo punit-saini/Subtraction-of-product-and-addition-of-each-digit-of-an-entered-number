@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+  cout << "Enter Number " << endl;
+  int num, digit;
+  int adder = 0;
+  int multiplier = 1;
+  cin >> num;
+  while (num >= 1) {
+    digit = num % 10;
+    adder += digit;
+    multiplier *= digit;
+    num /= 10;
+  }
+  cout << "Product - Sum of each digit of entered number is " << multiplier-adder;
+}
